@@ -66,6 +66,11 @@ artifacts/
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
+# Winforms
+/XML_editor/*.resx
+/XML_editor/XML_editor.csproj
+/XML_editor/Properties/*
+
 # StyleCop
 StyleCopReport.xml
 
