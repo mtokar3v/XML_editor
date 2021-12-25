@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_editor", "XML_editor\XML_editor.csproj", "{FD5ACCD1-8DD5-41F0-9A87-E11371309490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD5ACCD1-8DD5-41F0-9A87-E11371309490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5ACCD1-8DD5-41F0-9A87-E11371309490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5ACCD1-8DD5-41F0-9A87-E11371309490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5ACCD1-8DD5-41F0-9A87-E11371309490}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE1188B9-D430-46C8-85A8-88A65A0689DD}
+	EndGlobalSection
+EndGlobal
