@@ -93,9 +93,29 @@ namespace XML_editor.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap redoButton {
+            get {
+                object obj = ResourceManager.GetObject("redoButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap savefile {
             get {
                 object obj = ResourceManager.GetObject("savefile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undoButton {
+            get {
+                object obj = ResourceManager.GetObject("undoButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

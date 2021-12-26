@@ -121,13 +121,19 @@
   <data name="savefile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\image\savefile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="openFile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\image\openFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="openFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\image\openFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\image\newfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="openFile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\image\openFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="undoButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\undoButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redoButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\redoButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

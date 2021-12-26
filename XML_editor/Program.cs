@@ -5,6 +5,7 @@ namespace XML_editor
         [STAThread]
         static void Main()
         {
+
             ApplicationConfiguration.Initialize();
             Application.Run(new XmlEditorForm());
         }

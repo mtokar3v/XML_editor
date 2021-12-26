@@ -1,6 +1,7 @@
 using XML_editor.Builders;
 using XML_editor.Models;
 using XML_editor.Extensions;
+using XML_editor.Actions;
 
 namespace XML_editor
 {
@@ -16,6 +17,8 @@ namespace XML_editor
         {
             var fctb = new FastColoredTextBoxBuilder()
                 .WithDefaultSettings()
+                .WithGetInfoEvent(MainPanel, InfoPanel)
+                .WithUndoRedoEvent()
                 .Build();
 
             var newTab = new TabPageBuilder()
@@ -52,6 +55,8 @@ namespace XML_editor
             var fctb = new FastColoredTextBoxBuilder()
                 .WithDefaultSettings()
                 .WithText(fileText)
+                .WithGetInfoEvent(MainPanel, InfoPanel)
+                .WithUndoRedoEvent()
                 .Build();
 
             var newTab = new TabPageBuilder()
@@ -63,6 +68,16 @@ namespace XML_editor
                 .Build();
 
             MainPanel.Controls.Add(newTab);
+        }
+
+        private void RedoButton_Click(object sender, EventArgs e)
+        {
+            fastColoredTextBox1.Redo();
+        }
+
+        private void UndoButton_Click(object sender, EventArgs e)
+        {
+            fastColoredTextBox1.Undo();
         }
 
         #endregion
@@ -87,7 +102,19 @@ namespace XML_editor
             }
         }
 
+        private void UndoAndRedoKeys(object sender, KeyEventArgs e)
+        {
+            BaseActions.SetUpUndoRedoButtons(fastColoredTextBox1, e);
+        }
 
+        private void ReadNumberOfCharacters(object sender, FastColoredTextBoxNS.TextChangedEventArgs e)
+        {
+            BaseActions.PrintFileStatistics(MainPanel, InfoPanel);
+        }
 
+        private void MainPanel_TabIndexChanged(object sender, EventArgs e)
+        {
+            BaseActions.PrintFileStatistics(MainPanel, InfoPanel);
+        }
     }
 }
