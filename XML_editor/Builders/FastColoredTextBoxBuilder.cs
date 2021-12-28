@@ -11,14 +11,13 @@ namespace XML_editor.Builders
         public FastColoredTextBoxBuilder()
         {
             _fctb = new FastColoredTextBox();
+            ((System.ComponentModel.ISupportInitialize)(_fctb)).BeginInit();
         }
 
         public FastColoredTextBox Build() => _fctb;
 
         public FastColoredTextBoxBuilder WithDefaultSettings()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XmlEditorForm));
-
             _fctb.AutoCompleteBracketsList = new char[] {
         '(',
         ')',
@@ -31,8 +30,8 @@ namespace XML_editor.Builders
         '\'',
         '\''};
             _fctb.Language = Language.XML;
+            //_fctb.DescriptionFile = "htmlDesc.xml";
             _fctb.AutoScrollMinSize = new Size(179, 14);
-            _fctb.BackBrush = null;
             _fctb.CharHeight = 14;
             _fctb.CharWidth = 8;
             _fctb.Cursor = Cursors.IBeam;
@@ -40,20 +39,14 @@ namespace XML_editor.Builders
             _fctb.Dock = DockStyle.Fill;
             _fctb.Font = new Font("Courier New", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             _fctb.IsReplaceMode = false;
-            _fctb.Location = new Point(0, 0);
             _fctb.Name = "fastColoredTextBox";
-            _fctb.Paddings = new Padding(0);
             _fctb.SelectionColor = Color.FromArgb(60, 0, 0, 255);
-            _fctb.ServiceColors = (ServiceColors)resources.GetObject("_fctb.ServiceColors");
             _fctb.Size = new Size((int)Constants.WorkPanelWidth, (int)Constants.WorkPanelHeight);
-            _fctb.TabIndex = 0;
             _fctb.Zoom = 100;
             _fctb.LeftBracket = '<';
             _fctb.LeftBracket2 = '(';
-            _fctb.Paddings = new Padding(0);
             _fctb.RightBracket = '>';
             _fctb.RightBracket2 = ')';
-            _fctb.CommentPrefix = null;
             _fctb.AutoIndentCharsPatterns = "";
             return this;
         }

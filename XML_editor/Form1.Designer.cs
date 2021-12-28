@@ -1,4 +1,6 @@
-﻿namespace XML_editor
+﻿using XML_editor.Models;
+
+namespace XML_editor
 {
     partial class XmlEditorForm
     {
@@ -139,23 +141,23 @@
             this.New1.Location = new System.Drawing.Point(4, 24);
             this.New1.Name = "New1";
             this.New1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.New1.Size = new System.Drawing.Size(1354, 518);
+            this.New1.Size = new System.Drawing.Size((int)Constants.WorkPanelWidth, (int)Constants.WorkPanelHeight);
             this.New1.TabIndex = 0;
             this.New1.Text = "New1                   x";
             // 
             // fastColoredTextBox1
             // 
             this.fastColoredTextBox1.AutoCompleteBracketsList = new char[] {
-        '(',
-        ')',
-        '{',
-        '}',
-        '[',
-        ']',
-        '\"',
-        '\"',
-        '\'',
-        '\''};
+            '(',
+            ')',
+            '{',
+            '}',
+            '[',
+            ']',
+            '\"',
+            '\"',
+            '\'',
+            '\''};
             this.fastColoredTextBox1.AutoIndentCharsPatterns = "";
             this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(187, 14);
             this.fastColoredTextBox1.BackBrush = null;
@@ -165,7 +167,6 @@
             this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastColoredTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastColoredTextBox1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fastColoredTextBox1.IsReplaceMode = false;
             this.fastColoredTextBox1.Language = FastColoredTextBoxNS.Language.XML;
             this.fastColoredTextBox1.LeftBracket = '<';
