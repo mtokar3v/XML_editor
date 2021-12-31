@@ -10,7 +10,6 @@ namespace XML_editor.Builders
         {
             number++;
             _tabPage = new TabPage();
-            _tabPage.SuspendLayout();
             _tabPage.TabIndex = number;
 
             _tabPage.Width = (int)Constants.WorkPanelWidth;

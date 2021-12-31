@@ -11,7 +11,6 @@ namespace XML_editor.Builders
         public FastColoredTextBoxBuilder()
         {
             _fctb = new FastColoredTextBox();
-            ((System.ComponentModel.ISupportInitialize)(_fctb)).BeginInit();
         }
 
         public FastColoredTextBox Build() => _fctb;
@@ -29,19 +28,18 @@ namespace XML_editor.Builders
         '\"',
         '\'',
         '\''};
-            _fctb.Language = Language.XML;
-            //_fctb.DescriptionFile = "htmlDesc.xml";
+            _fctb.DescriptionFile = "xmlDesc.xml";
             _fctb.AutoScrollMinSize = new Size(179, 14);
             _fctb.CharHeight = 14;
             _fctb.CharWidth = 8;
             _fctb.Cursor = Cursors.IBeam;
             _fctb.DisabledColor = Color.FromArgb(100, 180, 180, 180);
-            _fctb.Dock = DockStyle.Fill;
             _fctb.Font = new Font("Courier New", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             _fctb.IsReplaceMode = false;
             _fctb.Name = "fastColoredTextBox";
             _fctb.SelectionColor = Color.FromArgb(60, 0, 0, 255);
             _fctb.Size = new Size((int)Constants.WorkPanelWidth, (int)Constants.WorkPanelHeight);
+            _fctb.Dock = DockStyle.Fill;
             _fctb.Zoom = 100;
             _fctb.LeftBracket = '<';
             _fctb.LeftBracket2 = '(';

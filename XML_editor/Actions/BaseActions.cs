@@ -9,10 +9,22 @@ namespace XML_editor.Actions
     {
         public static void PrintFileStatistics(TabControl mainPanel, FlowLayoutPanel infoPanel)
         {
-            var text = mainPanel.Controls[mainPanel.SelectedIndex].Controls[0].Text;
-            var length = text.Length;
-            var lines = text.Count(s => s == '\n') + 1;
-            infoPanel.Controls[0].Text = $"length: {length} lines: {lines}";
+            try
+            {
+                var index = mainPanel.SelectedIndex;
+
+                if (index >= 0)
+                {
+                    var text = mainPanel.Controls[index].Controls[0].Text;
+                    var length = text.Length;
+                    var lines = text.Count(s => s == '\n') + 1;
+                    infoPanel.Controls[0].Text = $"length: {length} lines: {lines}";
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public static void SetUpUndoRedoButtons(FastColoredTextBox fctb, KeyEventArgs e)
@@ -125,7 +137,7 @@ namespace XML_editor.Actions
                 .WithUndoRedoEvent()
                 .Build();
 
-            var newTab = new TabPageBuilder()
+            TabPage newTab = new TabPageBuilder()
                 .WithNameAndText()
                 .With3dBorders()
                 .WithColor(Color.Black)

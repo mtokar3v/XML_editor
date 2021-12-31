@@ -144,7 +144,7 @@ namespace XML_editor
             this.New1.Size = new System.Drawing.Size((int)Constants.WorkPanelWidth, (int)Constants.WorkPanelHeight);
             this.New1.TabIndex = 0;
             this.New1.Text = "New1                   x";
-            // 
+            //  
             // fastColoredTextBox1
             // 
             this.fastColoredTextBox1.AutoCompleteBracketsList = new char[] {
@@ -168,7 +168,7 @@ namespace XML_editor
             this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastColoredTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fastColoredTextBox1.IsReplaceMode = false;
-            this.fastColoredTextBox1.Language = FastColoredTextBoxNS.Language.XML;
+            this.fastColoredTextBox1.DescriptionFile = "xmlDesc.xml";
             this.fastColoredTextBox1.LeftBracket = '<';
             this.fastColoredTextBox1.LeftBracket2 = '(';
             this.fastColoredTextBox1.Location = new System.Drawing.Point(0, 0);
